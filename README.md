@@ -1,4 +1,8 @@
 # Coding Challenge
+
+## Solution:
+This repo contains the Solution for the following Challenge.
+
 ## What's Provided
 A simple [Spring Boot](https://projects.spring.io/spring-boot/) web application has been created and bootstrapped 
 with data. The application contains information about all employees at a company. On application start-up, an in-memory 
