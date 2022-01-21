@@ -3,6 +3,44 @@
 ## Solution:
 This repo contains the Solution for the following Challenge.
 
+### API Request Samples
+```
+Task 1-> ReportingStructure GET API:
+* READ
+    * HTTP Method: GET 
+    * URL: localhost:8080/reportingStructure
+    * RESPONSE: numberOfReports
+```
+
+```
+Task 2-> Compensation API:
+* CREATE
+    * HTTP Method: POST 
+    * URL: localhost:8080/compensation
+    * PAYLOAD: Compensation
+    * RESPONSE: Compensation
+* READ
+    * HTTP Method: GET 
+    * URL: localhost:8080/compensation/{id}
+    * RESPONSE: Compensation
+```
+The Compensation has a JSON schema of:
+```json
+{
+    "employee": {
+        "employeeId": {
+            "type": "string"
+      }
+    },
+    "salary": {
+      "type": "string"
+    },
+    "effectiveDate": {
+      "type": "localDate"
+    }
+}
+```
+
 ## What's Provided
 A simple [Spring Boot](https://projects.spring.io/spring-boot/) web application has been created and bootstrapped 
 with data. The application contains information about all employees at a company. On application start-up, an in-memory 
